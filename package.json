@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://username.github.io/website/",
+  "homepage": "https://adi-unni.github.io/website/",
   "eslintConfig": {
     "extends": [
       "react-app",
