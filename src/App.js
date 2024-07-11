@@ -6,6 +6,7 @@ function App() {
       <h1 className='text-4xl font-bold text-blue-500'> Aditya Unnithan </h1>
       <h2 className='text-2xl font-bold text-blue-500'> Full Stack Software Engineer </h2>
       <p className='text-lg text-blue-600'> Welcome to my website</p>
+      <p className='text-lg text-blue-600'> hi </p>
     </div>
   );
 }
