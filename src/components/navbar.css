@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    nav {
+        @apply bg-blue-950 text-white flex justify-between items-center p-4;
+    }
+
+    nav ul {
+        @apply list-none flex justify-around;
+    }
+
+    nav ul li {
+        @apply px-2;
+
+        border-right: 1px  white;
+        border-left: 1px solid white;
+    }
+
+    nav ul li a {
+        @apply text-white;
+    }
+
+    nav ul li a:hover {
+        @apply underline;
+    }
+
+}
+

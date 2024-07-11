@@ -1,21 +1,23 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
-function SuperButton() {
-  return(
-    <button>
-      Enter the matrix
-    </button>
-  )
-}
 
 function App() {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-gray-100'>
-      <h1 className='text-4xl font-bold text-blue-500'> Aditya Unnithan </h1>
-      <h2 className='text-2xl font-bold text-blue-500'> Full Stack Software Engineer </h2>
-      <p className='text-lg text-blue-600'> Welcome to my website</p>
-      <SuperButton />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
