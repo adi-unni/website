@@ -13,9 +13,6 @@
 
     nav ul li {
         @apply px-2;
-
-        border-right: 1px  white;
-        border-left: 1px solid white;
     }
 
     nav ul li a {
@@ -23,7 +20,7 @@
     }
 
     nav ul li a:hover {
-        @apply underline;
+        @apply backdrop-brightness-125;
     }
 
 }
